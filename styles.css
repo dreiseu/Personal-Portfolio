@@ -375,21 +375,168 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
-    /*#header {
-        background-image: url(/Images/phone-background.png);
-    }*/
+@media only screen and (max-width: 1024px) {
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-        flex-basis: 50%;
+        margin-top: 65%;
+        font-size: 35px;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+    .header-right {
+        font-size: 190px;
+        display: flex;
+        margin-top: 65%;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    nav ul {
+        background: #ababab;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 100px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 5px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .about-col-2 p{
+        font-size: 25px;
+    }
+    .about-col-2 li {
+        font-size: 25px;
+    }
+    .tab-links {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    /*
+    .copyright {
+        font-size: 14px;
+    */
+}
+
+@media only screen and (max-width: 540px) {
+    .header-text {
+        margin-top: 45%;
+        font-size: 25px;
     }
     .header-text h1 {
         font-size: 30px;
     }
+    .header-right {
+        font-size: 150px;
+        display: flex;
+        margin-top: 45%;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    nav ul {
+        background: #ababab;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 100px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 20px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 0px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .about-col-2 p{
+        font-size: 17px;
+    }
+    .about-col-2 li {
+        font-size: 15px;
+    }
+    .tab-links {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    /*
+    .copyright {
+        font-size: 14px;
+    */
+}
+
+@media only screen and (max-width: 430px) {
+    /*#header {
+        background-image: url(/Images/phone-background.png);
+    }*/
+    .header-text {
+        margin-top: 65%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    .header-right {
+        font-size: 100px;
+        display: flex;
+        margin-top: 250px;
+    }
     nav .fa-solid {
         display: block;
         font-size: 25px;
+        margin-top: 20px;
     }
     nav ul {
         background: #ababab;
@@ -408,12 +555,13 @@ nav .fa-solid {
     }
     nav ul .fa-solid {
         position: absolute;
-        top: 25px;
+        top: 10px;
         left: 25px;
         cursor: pointer;
     }
     .sub-title {
         font-size: 40px;
+        margin-bottom: 10px;
     }
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
@@ -422,6 +570,12 @@ nav .fa-solid {
         margin-bottom: 30px;
     }
     .about-col-2 {
+        font-size: 14px;
+    }
+    .about-col-2 p{
+        font-size: 14px;
+    }
+    .about-col-2 li {
         font-size: 14px;
     }
     .tab-links {
@@ -435,11 +589,6 @@ nav .fa-solid {
     .copyright {
         font-size: 14px;
     */
-    .header-right {
-        font-size: 100px;
-        display: flex;
-        flex-basis: 100%;
-    }
 }
 
 #msg {
