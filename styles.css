@@ -55,7 +55,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -69,6 +69,13 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    flex-basis: 60%;
+}
+
+.header-right {
+    flex-basis: 35%;
+    font-size: 400px;
+    margin-top: 70px;
 }
 
 .header-text h1 {
@@ -79,7 +86,6 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #ababab;
 }
-
 /* About */
 
 #about {
@@ -138,7 +144,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links.active-link::after {
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li {
@@ -386,7 +392,7 @@ nav .fa-solid {
         font-size: 25px;
     }
     nav ul {
-        background: #ff004f;
+        background: #fff;
         position: fixed;
         top: 0;
         right: -200px;
