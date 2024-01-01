@@ -28,10 +28,9 @@ body {
 
 nav {
     display: block;
-    align-items: right;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 50%;
 }
 
 .logo {
@@ -383,6 +382,7 @@ nav .fa-solid {
     .header-text {
         margin-top: 100%;
         font-size: 16px;
+        flex-basis: 50%;
     }
     .header-text h1 {
         font-size: 30px;
@@ -392,7 +392,7 @@ nav .fa-solid {
         font-size: 25px;
     }
     nav ul {
-        background: #fff;
+        background: #ababab;
         position: fixed;
         top: 0;
         right: -200px;
@@ -435,6 +435,11 @@ nav .fa-solid {
     .copyright {
         font-size: 14px;
     */
+    .header-right {
+        font-size: 100px;
+        display: flex;
+        flex-basis: 100%;
+    }
 }
 
 #msg {
