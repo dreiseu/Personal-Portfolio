@@ -1,214 +1,386 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Andrei Limuel Gelvoleo's Portfolio</title>
-        <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="styles.css" />
-        <script src="https://kit.fontawesome.com/9ae53bff24.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-    <div id="header">
-        <div class="container">    
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="row">
-            <div class="header-text">
-                <p>Software | Electronics Engineer</p>
-                <h1>Hi, I'm <span>Andrei</span><br>Limuel Gelvoleo</h1>
-            </div>
-            <div class="header-right">
-                <i class="fa-brands fa-wpbeginner"></i>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- About -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/348358091_6402830493071899_4688174836783639756_n.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I am a fresh graduate of Electronics Engineering from Bataan Peninsula State University. He is a former DOST RA7687 S&T Undergraduate Scholarship Grantee. He is proficient in Microsoft Offices, Google Docs and Sheets, Data Entry and Scraping, Online Research, as well as has knowledge about programming of microcontrollers like Arduino and ESP32, PCB Design and 3D modelling and printing.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCU Portfolio</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <!-- Skills -->
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Skill 1</span><br>Details</li>
-                            <li><span>Skill 2</span><br>Details</li>
-                        </ul>
-                    </div>
-                    <!-- Experience -->
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>March 2023 - September 2023</span><br>Electronics and Hardware Engineering Intern at KloudTech</li>
-                            <li><span>July 2022 - September 2022</span><br>Telecommunications Intern at NLEX Corp.</li>                 
-                        </ul>
-                    </div>
-                    <!-- Education -->
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2019 - 2023</span><br>Bachelor of Science in Electronics Engineering at Bataan Peninsula State University</li>
-                            <li><span>2017 - 2019</span><br>High School at Holy Rosary Parochial Institute</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Service 1</h2>
-                    <p>Description</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Service 2</h2>
-                    <p>Description</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="Images/work-1.png">
-                    <div class="layer">
-                        <h3>Work 1</h3>
-                        <p>Description</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/work-2.png">
-                    <div class="layer">
-                        <h3>Work 2</h3>
-                        <p>Description</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/work-3.png">
-                    <div class="layer">
-                        <h3>Work 3</h3>
-                        <p>Description</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/dreiseu" class="btn">See more</a>
-        </div>
-    </div>
-    <!-- Contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> dreigelvoleo26@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i> +639 810 380 542</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/andreilimuel.gelvoleo/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com/dreigelvoleo"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://www.instagram.com/dreigelvoleo/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/andrei-limuel-gelvoleo-618a06244/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="Images/Gelvoleo-Resume.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <!--
-            <div class="copyright">
-                <p>Copyright . Made by Andrei Limuel Gelvoleo</p>
-            </div>
-        -->
-    </div>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
 
-    <script>
+        /* Navigation */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname) {
-            for(tablink of tablinks) {
-                tablink.classList.remove("active-link");
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #2b6cb0;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+                        url('/images/background.jpg');
+            background-size: cover;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #1a202c;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .projects {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #2d3748;
+            margin-bottom: 2rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-description {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+        }
+
+        /* About Section */
+        .about {
+            background: #f7fafc;
+            padding: 4rem 2rem;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-tag {
+            background: #edf2f7;
+            color: #2d3748;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            color: #4a5568;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: #2b6cb0;
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            border-top: 1px solid #e2e8f0;
+            padding: 2rem;
+            text-align: center;
+            color: #4a5568;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
             }
-            for(tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 1rem;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
 
-    </script>
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Engr. Andrei Limuel Gelvoleo</div>
+            <button class="mobile-menu-btn">☰</button>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Project Portfolio</h1>
+        <p>Exploring the world of embedded systems through innovative projects</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- Project cards will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm a passionate embedded systems developer with expertise in various microcontroller platforms. 
+               My work focuses on creating innovative solutions using Arduino, ESP32, and Raspberry Pi platforms. 
+               I enjoy tackling complex problems and turning ideas into functional prototypes.</p>
+            <div class="skills">
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">Arduino</span>
+                <span class="skill-tag">ESP32</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PCB Design</span>
+                <span class="skill-tag">IoT</span>
+                <span class="skill-tag">RTOS</span>
+                <span class="skill-tag">Circuit Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Interested in collaborating or learning more about my projects? Feel free to reach out!</p>
+        <div class="social-links">
+            <a href="https://github.com/dreiseu" class="social-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/andrei-limuel-gelvoleo-ece-ect/" class="social-link">LinkedIn</a>
+            <a href="mailto:dreigelvoleo26@gmail.com" class="social-link">Email</a>
+        </div>
+    </section>
+
+
 
     <script>
+        // Project Data
+        const projects = [
+            {
+                title: "Automated Weather Station",
+                description: "Developed and deployed multiple weather stations using ESP32 and Arduino Nano to monitor different weather parameters. Used GSM to send data to a server for data visualization.",
+                image: "/images/aws.webp",
+                tech: ["ESP32", "Arduino", "C++", "IoT", "Sensors", "PCB Design", "Schematic Diagram", "Circuit Design"]
+            },
+            {
+                title: "Water Level Monitoring System",
+                description: "Developed a water level monitoring station using ESP32 with multiple sensors for distance, temperature, humidity, and pressure. Data is sent to a server through GSM.",
+                image: "/images/wlms.webp",
+                tech: ["ESP32", "Arduino", "C++", "Sensors", "IoT", "PCB Design", "Schematic Diagram", "Circuit Design"]
+            },
+            {
+                title: "Automated Aeroponics System",
+                description: "Built an automated aeroponics system for Romaine Lettuce using Arduino Mega to monitor parameters such as temperature, humidity, pH Level, and many more. Automated the time of misting of nutrients and implemented a notification using GSM. Data are displayed in a software called Blynk App.",
+                image: "/images/aeroponics.png",
+                tech: ["Arduino Mega", "GSM", "Motors", "Sensors", "Blynk App", "Schematic Diagram", "Circuit Design"]
+            },
+            {
+                title: "Rainfall Simulator with Parameter Controller",
+                description: "Programmed a rainfall simulator with controls for water pump and solenoid valves using Arduino Mega. Flow rate is displayed in an LCD.",
+                image: "/images/rainfall.png",
+                tech: ["Arduino Mega", "Motors", "Sensors", "LCD"]
+            },
+            {
+                title: "Air Quality Monitoring System",
+                description: "Programmed a modular air quality monitoring device used for detection of AQI of air conditioning units using ESP8266 and MQ135 sensor. Integrated a buzzer with different sound depending on the level of the AQI.",
+                image: "/images/aqm.png",
+                tech: ["ESP8266", "Sensors", "Audio"]
+            }
+        ];
 
-        var sidemenu = document.getElementById("sidemenu");
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
 
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
 
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Render Projects
+        const projectsGrid = document.querySelector('.projects-grid');
+
+        projects.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'project-card';
+            
+            projectCard.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="tech-tags">
+                        ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            
+            projectsGrid.appendChild(projectCard);
+        });
     </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyi_CfyDa96WbG2pnjrVKpIyvkggEmql2Kx8Z8MbOu9QoCLiQ4VY2C_hW5zX9YdM_pCvw/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-  
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully!"
-                    setTimeout(function() {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-
 </body>
 </html>
